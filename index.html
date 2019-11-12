@@ -1,1 +1,94 @@
-<h1>Hello World?</h1>
+<!DOCTYPE html>
+<!--So, my journey begins!-->
+<html>
+<!-- CSS style section for tribute page -->
+<style>
+/* Container for the entire tribute page */
+title{
+  text-align: center;
+}
+#main{
+  background: gray;
+  text-align: center;
+}
+#title{
+  margin: auto;
+
+}
+/* Center img element */
+#main #img-div{
+  text-align: center;
+}
+
+#image { /* Use percent for relative to parent element size */
+  /* max-width 100% will not stretch beyond original width.
+    The display block changes image inline element to a block element
+    on a new line. The height scales to keep aspect ratio. Left and right
+    scales with aspect ratio.
+   */
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
+}
+
+#tribute_info{
+  margin-bottom: 500px;
+}
+</style>
+<!-- The main part of the tribute page -->
+<head>
+  <title>
+    Tribute Page
+  </title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async></script>
+</head>
+<body>
+<div id="main">
+  <div id="title">
+    Dr. Neil deGrasse Tyson
+  </div>
+  <!-- The Neil deGrasse Tyson image section. -->
+  <div id= "img-div">
+    <img id="image" src="https://www.cobbenergycentre.com/assets/img/NDT_1250x610-d9cb35e0eb.jpg"
+        alt="Image of Neil deGrasse Tyson staring into the universe."/>
+        <figcaption id="img-caption">
+          Neil deGrasse Tyson looking into the future.
+        </figcaption>
+  </div>
+  <div id="tribute-info">
+    Neil deGrasse Tyson explores the cosmos from his humble origins on
+        planet Earth. Dr. Tyson was born on October 5, 1958 and studied
+        at Harvard (BA); University of Texas, Austin (MA); and Columbia University
+        (MPhil, PhD). He spends most of his time working as the director of the
+        Hayden Planetarium and inspiring people to think about the cosmos.
+        Below are some works written by Neil deGrasse Tyson.
+  </div>
+  <ul>
+    <li class="item1"><i>Merlin's Tour of the Universe </i>(1989)</li>
+    <li class="item2"><i>Universe Down to Earth </i>(1994)</li>
+    <li class="item3"><i>Just Visiting This Planet </i>(1998)</li>
+    <li class="item4"><i>One Universe: At Home in the Cosmos </i>(2000)</li>
+    <li class="item5"><i>Cosmic Horizons: Astronomy at the Cutting Edge </i>(2000)</li>
+    <li class="item6"><i>City of Stars: A New Yorker's Guide to the Cosmos </i>(2002)</li>
+    <li class="item7"><i>My Favorite Universe </i>(2003)</li>
+    <li class="item8"><i>Origins: Fourteen Billion Years of Cosmic Evolution </i>(2004)</li>
+    <li class="item9"><i>The Sky is Not the Limit: Adventures of an Urban Astrophysicist </i>(2004)</li>
+    <li class="item10"><i>Death by Black Hole: And Other Cosmic Quandaries </i>(2007)</li>
+    <li class="item11"><i>The Pluto Files: The Rise and Fall of America's Favorite Planet </i>(2009)</li>
+    <li class="item12"><i>Space Chronicles: Facing the Ultimate Frontier </i>(2012)</li>
+    <li class="item13"><i>Welcome to the Universe: An Astrophysical Tour </i>(2016)</li>
+    <li class="item14"><i>Astrophysics for People in a Hurry </i>(2017)</li>
+    <li class="item15"><i>Accessory to War: The Unspoken Alliance Between Astrophysics and the Military </i>(2018)</li>
+  </ul>
+    <!-- To make link open in new tab use _blank with target -->
+    <a  id="tribute-link" href="https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson"
+        target="_blank">
+      Click for more on Neil deGrasse Tyson.
+    </a>
+</div>
+<!-- Added to get past error in testing -->
+<div id="mocha"></div>
+</body>
+</html>
